@@ -13,7 +13,7 @@ const inputDayOne = getInputData('1');
 
 function dayOne(iteration: number, calories: number, caloriesArray: Array<number>): void {
   if (inputDayOne[iteration] !== undefined) {
-    return dayOne((iteration + 1), (inputDayOne[iteration] ? (calories + +inputDayOne[iteration]) : 0),
+    return dayOne(++iteration, (inputDayOne[iteration] ? (calories + +inputDayOne[iteration]) : 0),
       (inputDayOne[iteration] ? caloriesArray : [...caloriesArray, calories]));
   } else {
     console.log('Highest calories: ' + Math.max(...caloriesArray));
