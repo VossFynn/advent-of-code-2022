@@ -1,4 +1,4 @@
-const fs = require('fs');
+export const fs = require('fs');
 
 /**
  * Reformat the given input to a string array
@@ -19,11 +19,11 @@ function dayOne(iteration: number, calories: number, caloriesArray: Array<number
     console.log('Highest calories: ' + Math.max(...caloriesArray));
     console.log('Sum of the 3 highest calories: ' +
       caloriesArray
-      .sort((a, b) => b - a)
-      .slice(0, 3)
-      .reduce((a, b) => {
-        return a + b;
-      }, 0));
+        .sort((a, b) => b - a)
+        .slice(0, 3)
+        .reduce((a, b) => {
+          return a + b;
+        }, 0));
   }
 }
 
