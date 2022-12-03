@@ -1,10 +1,10 @@
 {
   "name": "advent-of-code",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Advent Of Code 2022",
   "main": "index.js",
   "scripts": {
-    "run": "npx ts-node src/day-2.ts"
+    "run": "npx ts-node src/day-3.ts"
   },
   "author": "VossBoss",
   "license": "ISC",

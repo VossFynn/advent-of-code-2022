@@ -1,16 +1,8 @@
-const fs = require('fs');
+import * as utils from './utils'
+
 const _ = require('lodash');
 
-/**
- * Reformat the given input to a string array
- *
- * @param day {string}
- */
-function getInputData(day: string): Array<Array<string>> {
-  return fs.readFileSync(`src/assets/input_${day}.txt`, 'utf-8').split(/[ \n]+/);
-}
-
-const inputDayTwo = getInputData('2');
+const inputDayTwo = utils.getInputData('2', /[ \n]+/);
 
 /**
  * This enum stores the relevant information about how much points u get for each action

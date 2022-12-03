@@ -1,15 +1,6 @@
-export const fs = require('fs');
+import * as utils from './utils'
 
-/**
- * Reformat the given input to a string array
- *
- * @param day {string}
- */
-function getInputData(day: string): Array<string> {
-  return fs.readFileSync(`src/assets/input_${day}.txt`, 'utf-8').split('\n');
-}
-
-const inputDayOne = getInputData('1');
+const inputDayOne = utils.getInputData('1', '\n');
 
 function dayOne(iteration: number, calories: number, caloriesArray: Array<number>): void {
   if (inputDayOne[iteration] !== undefined) {
