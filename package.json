@@ -4,7 +4,7 @@
   "description": "Advent Of Code 2022",
   "main": "index.js",
   "scripts": {
-    "run": "npx ts-node src/day-3.ts"
+    "run": "npx ts-node src/day-4.ts"
   },
   "author": "VossBoss",
   "license": "ISC",
